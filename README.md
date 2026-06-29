@@ -29,7 +29,6 @@ c) Tratamento de Bouncing: Os acionamentos dos botões foram tratados via softwa
 
 A inicialização do módulo ADC foi programada de forma que o registrador ADCON1 seja configurado somente após as funções de inicialização da biblioteca nativa do MikroC, garantindo que os bits de configuração de Vref externa operem corretamente na simulação.
 
-
 4. Resultados 
 O firmware  obteve sucesso na compilação na IDE MikroC PRO for PIC, gerando o arquivo executável '.hex' sem erros para a simulação. Na simulação realizada no SimulIDE, o circuito respondeu perfeitamente aos estímulos:
 a) Em modo de espera, o display exibe as configurações selecionadas.
@@ -37,7 +36,22 @@ b) Ao acionar o botão de início, a contagem regressiva decresce de forma preci
 c) Ao variar o potenciômetro de entrada, o LCD atualiza em tempo real a temperatura calculada.
 d) Quando o valor lido ultrapassa os 50.0°C, o LED indicador conectado em RD0 acende instantaneamente, demonstrando o controle correto da lógica da resistência.
 
+#### Compilação do Firmware (MikroC)
+![Compilação](./imagens/compilação.png)
 
-5. Conclusão
+#### Simulação - Modo Curto Selecionado (10s)
+![Modo Curto](./imagens/modo_curto.png)
+
+#### Simulação - Modo Longo Selecionado (60s)
+![Modo Longo](./imagens/modo_longo.png)
+
+#### Simulação - Temperatura Acima de 50°C (LED Resistência Aceso)
+![Temperatura Maior que 50](./imagens/simulação_temp_maior50.png)
+
+#### Simulação - Temperatura Abaixo de 50°C (LED Resistência Apagado)
+![Temperatura Menor que 50](./imagens/simulação_temp_menor50.png)
+
+
+6. Conclusão
 O projeto atingiu todos os objetivos propostos na entrega final. A integração entre os módulos de conversão analógico-digital (ADC), temporizadores por interrupção (Timer0/Timer1) e controle de periféricos externos (LCD e LED) permitiu consolidar a compreensão prática sobre a arquitetura RISC e a robustez da família PIC18 em aplicações embarcadas industriais.
 O projeto atingiu todos os objetivos propostos na entrega final. A integração entre os módulos de conversão analógico-digital (ADC), temporizadores por interrupção (Timer0/Timer1) e controle de periféricos externos (LCD e LED) permitiu consolidar a compreensão prática sobre a arquitetura RISC e a robustez da família PIC18 em aplicações embarcadas industriais.
