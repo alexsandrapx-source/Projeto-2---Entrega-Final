@@ -54,7 +54,7 @@ c) Ao variar o potenciômetro de entrada, o LCD atualiza em tempo real a tempera
 d) Quando o valor lido ultrapassa os 50.0°C, o LED indicador conectado em RD0 acende instantaneamente, demonstrando o controle correto da lógica da resistência.
 
 #### Compilação do Firmware (MikroC)
-![Compilação](./imagens/compilação.png)
+![Compilação](./imagens/compilacao.png)
 
 #### Simulação - Modo Curto Selecionado (10s)
 ![Modo Curto](./imagens/modo_curto.png)
@@ -63,10 +63,10 @@ d) Quando o valor lido ultrapassa os 50.0°C, o LED indicador conectado em RD0 a
 ![Modo Longo](./imagens/modo_longo.png)
 
 #### Simulação - Temperatura Acima de 50°C (LED Resistência Aceso)
-![Temperatura Maior que 50](./imagens/simulação_temp_maior50.png)
+![Temperatura Maior que 50](./imagens/simulacao_temp_maior50.png)
 
 #### Simulação - Temperatura Abaixo de 50°C (LED Resistência Apagado)
-![Temperatura Menor que 50](./imagens/simulação_temp_menor50.png)
+![Temperatura Menor que 50](./imagens/simulacao_temp_menor50.png)
 
 
 5. Conclusão
