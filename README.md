@@ -19,6 +19,7 @@ a) Medição de Temperatura: Leitura analógica realizada por meio de um sensor 
 b) Referência de Tensão Externa: Utilização de uma tensão externa de referência de 1V conectada ao pino `Vref+` (RA3), otimizando a resolução de 10 bits do conversor A/D para a sensibilidade do LM35.
 
 c) Seleção de Tempo: Um botão realiza a escolha entre uma aferição de curta duração (10 segundos) ou longa duração (60 segundos).
+
 d) Controle de Processo: Um segundo botão é responsável por iniciar a contagem regressiva e habilitar a atualização da leitura de temperatura.
 
 e) Interface Visual: Display LCD 16x2 opera em modo de comunicação paralela de 4 bits (PORTB), exibindo continuamente a temperatura formatada no padrão "XX.X °C" e o tempo restante.
@@ -27,7 +28,7 @@ f) Atuador (Resistência - LED): Um LED conectado ao pino RD0 simula o acionamen
 
 
 3. Implementação do Firmware
-   
+
 O código foi estruturado de forma eficiente para evitar o consumo excessivo de memória de dados, tratando as variáveis de temperatura de forma inteira e escalada.
 
 A temporização do sistema utiliza os periféricos internos do PIC:
@@ -69,5 +70,6 @@ d) Quando o valor lido ultrapassa os 50.0°C, o LED indicador conectado em RD0 a
 
 
 5. Conclusão
+   
 O projeto atingiu todos os objetivos propostos na entrega final. A integração entre os módulos de conversão analógico-digital (ADC), temporizadores por interrupção (Timer0/Timer1) e controle de periféricos externos (LCD e LED) permitiu consolidar a compreensão prática sobre a arquitetura RISC e a robustez da família PIC18 em aplicações embarcadas industriais.
 O projeto atingiu todos os objetivos propostos na entrega final. A integração entre os módulos de conversão analógico-digital (ADC), temporizadores por interrupção (Timer0/Timer1) e controle de periféricos externos (LCD e LED) permitiu consolidar a compreensão prática sobre a arquitetura RISC e a robustez da família PIC18 em aplicações embarcadas industriais.
